@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        nav {
+            background-color: #333;
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .vertical {
+
+            flex-direction: column;
+
+        }
+
+        nav a {
+
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        nav a.active {
+            background-color: #4caf50;
+            color: white;
+        }
+    </style>
+    <div style="display: flex ; width: 100%; justify-content: center; gap: 10rem;">
+        <div>
+            <h1>Vertical</h1>
+            <nav class="vertical">
+                <a href="#">Home</a>
+                <a href="#">Java</a>
+                <a href="#">CSS</a>
+                <a href="#">HTML</a>
+                <a href="#">Bootstrap</a>
+            </nav>
+        </div>
+        <div>
+            <h1>Horizontal</h1>
+            <nav class="">
+                <a href="#">Home</a>
+                <a href="#">Java</a>
+                <a href="#">CSS</a>
+                <a href="#">HTML</a>
+                <a href="#">Bootstrap</a>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>

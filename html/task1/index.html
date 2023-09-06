@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Agename</th>
+        </tr>
+    </table>
+
+    <script>
+        const data = [{
+                fname: "John",
+                lname: "Smith",
+                age: 50
+            },
+            {
+                fname: "Eve",
+                lname: "Jackson",
+                age: 94
+            },
+            {
+                fname: "John",
+                lname: "Doe",
+                age: 80
+            }
+        ]
+
+        const table = document.querySelector('table')
+
+        data.forEach((item) => {
+
+            const toAppend = `<tr>
+                <td>${item.fname}</td>
+                <td>${item.lname}</td>
+                <td>${item.age}</td>
+            </tr>`
+
+            table.innerHTML += toAppend
+        })
+    </script>
+</body>
+
+</html>

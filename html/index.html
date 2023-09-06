@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Task Name</th>
+            <th>Task Link</th>
+        </tr>
+
+    </table>
+    <script>
+        const numberOfTasks = 2;
+        const table = document.querySelector('table');
+        const toAdd = (index) => (`
+            <tr>
+                <td>Task ${index}</td>
+                <td><a href="task${index}/index.html" target="_blank">Click here</a></td>
+            </tr>
+        `);
+        for (let i = 0; i < numberOfTasks; i++) {
+            table.innerHTML += toAdd(i + 1);
+        }
+    </script>
+</body>
+
+</html>

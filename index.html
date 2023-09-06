@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Task type</th>
+            <th>Link</th>
+        </tr>
+    </table>
+
+    <script>
+        const table = document.querySelector('table');
+        const toAdd = (item) => (`
+            <tr>
+                <td>${item} Tasks</td>
+                <td><a href="${item.toLowerCase()}/index.html" target="_blank">Click here</a></td>
+            </tr>
+        `);
+        ["HTML", "CSS", "JavaScript", "Bootstrap"].map((item, idx) => (
+            table.innerHTML += toAdd(item)
+        ))
+    </script>
+</body>
+
+</html>
