@@ -2,51 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task 1</title>
 </head>
 
 <body>
+    <style type="text/css">
+        table {
+            background-color: #6ce0d8;
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 589px;
+        }
+
+        th {
+            border: white 1px solid;
+            font-size: 11px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        td {
+            border: white 1px solid;
+            font-size: 11px;
+            padding: 1px 5px;
+        }
+    </style>
     <table>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Agename</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>59</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </tbody>
     </table>
-
-    <script>
-        const data = [{
-                fname: "John",
-                lname: "Smith",
-                age: 50
-            },
-            {
-                fname: "Eve",
-                lname: "Jackson",
-                age: 94
-            },
-            {
-                fname: "John",
-                lname: "Doe",
-                age: 80
-            }
-        ]
-
-        const table = document.querySelector('table')
-
-        data.forEach((item) => {
-
-            const toAppend = `<tr>
-                <td>${item.fname}</td>
-                <td>${item.lname}</td>
-                <td>${item.age}</td>
-            </tr>`
-
-            table.innerHTML += toAppend
-        })
-    </script>
 </body>
 
 </html>

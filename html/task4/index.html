@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 4</title>
+</head>
+
+<style>
+  td {
+    padding: 5px 15px;
+  }
+</style>
+
+<body>
+  <form onsubmit="()=>{}">
+    <table>
+      <tr>
+        <td><label for="fullName">Full Name:</label></td>
+        <td><input type="text" name="fullName" placeholder="Enter your name" /></td>
+      </tr>
+      <tr>
+        <td><label for="username">Username:</label></td>
+        <td><input type="text" name="username" placeholder="Username" /></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" name="password" placeholder="Password" </td> </tr> <tr>
+        <td><label for="confirmPassword">Re-enter password::</label></td>
+        <td><input type="password" name="confirmPassword" placeholder="Re-enter password:" </td> </tr> <tr>
+        <td><label for="address">Address:</label></td>
+        <td><input type="text" name="address" placeholder="Address" /></td>
+      </tr>
+      <tr>
+        <td><label for="age">Age:</label></td>
+        <td><input type="number" name="age" placeholder="Age" /></td>
+      </tr>
+      <tr>
+        <td><label>Gender:</label></td>
+        <td>
+          <select>
+            <option value="female">Male</option>
+            <option value="male">Female</option>
+            <option value="other">Not to mention</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="alert('Your form has been submitted successfully!')" type="submit">Save</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>
